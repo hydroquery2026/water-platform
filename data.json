@@ -1,0 +1,89 @@
+{
+  "water": [
+    {
+      "station": "南山站",
+      "water": 35.6,
+      "rain": 12.3,
+      "time": "2025-04-10 08:00"
+    },
+    {
+      "station": "东风站",
+      "water": 33.2,
+      "rain": 8.5,
+      "time": "2025-04-10 08:00"
+    },
+    {
+      "station": "龙华站",
+      "water": 36.1,
+      "rain": 15.2,
+      "time": "2025-04-10 08:00"
+    },
+    {
+      "station": "南山站",
+      "water": 35.9,
+      "rain": 2.1,
+      "time": "2025-04-10 14:00"
+    },
+    {
+      "station": "东风站",
+      "water": 33.6,
+      "rain": 0.0,
+      "time": "2025-04-10 14:00"
+    },
+    {
+      "station": "龙华站",
+      "water": 36.4,
+      "rain": 4.8,
+      "time": "2025-04-10 14:00"
+    }
+  ],
+  "projects": [
+    {
+      "name": "南山水库",
+      "type": "水库",
+      "location": "南山区山前",
+      "desc": "南山区防洪水库",
+      "status": "正常"
+    },
+    {
+      "name": "东风闸",
+      "type": "水闸",
+      "location": "城区东侧",
+      "desc": "城区排水闸",
+      "status": "正常"
+    },
+    {
+      "name": "龙华泵站",
+      "type": "泵站",
+      "location": "龙华区",
+      "desc": "城区排涝泵站",
+      "status": "维护"
+    }
+  ],
+  "inspections": [
+    {
+      "project": "南山水库",
+      "inspector": "张三",
+      "content": "坝体检查",
+      "result": "正常",
+      "time": "2025-04-10 09:20",
+      "file": "坝体照片_001.jpg"
+    },
+    {
+      "project": "东风闸",
+      "inspector": "李四",
+      "content": "闸门润滑",
+      "result": "需维护",
+      "time": "2025-04-10 10:05",
+      "file": "润滑记录.pdf"
+    },
+    {
+      "project": "龙华泵站",
+      "inspector": "王五",
+      "content": "设备巡检",
+      "result": "正常",
+      "time": "2025-04-10 11:10",
+      "file": "现场照片.png"
+    }
+  ]
+}

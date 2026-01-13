@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>水利信息综合查询平台（演示版）</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <div>水利信息综合查询平台</div>
+      <div class="badge">B/S 架构 · 前端演示 · 可截图答辩</div>
+    </div>
+    <div style="display:flex; gap:10px; align-items:center;">
+      <div class="badge" id="userBadge">未登录（演示）</div>
+      <button class="btn ghost" id="btnOpenLogin">登录</button>
+    </div>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="small" style="padding:6px 12px; opacity:.9;">功能菜单</div>
+      <div class="navitem active" data-view="dashboard">系统首页</div>
+      <div class="navitem" data-view="water">水情管理</div>
+      <div class="navitem" data-view="projects">工程管理</div>
+      <div class="navitem" data-view="inspections">巡检管理</div>
+      <div class="navitem" data-view="upload">文件上传</div>
+
+      <div class="small" style="padding:14px 12px 6px; opacity:.85;">账号示例</div>
+      <div class="small" style="padding:0 12px; opacity:.9;">admin / 123456（管理员）</div>
+      <div class="small" style="padding:6px 12px; opacity:.9;">任意账号/密码（普通用户）</div>
+    </aside>
+
+    <main class="main">
+      <div id="content"></div>
+    </main>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-backdrop" id="loginBackdrop">
+    <div class="modal">
+      <h2>系统登录</h2>
+      <div class="row">
+        <div class="field">
+          <label>账号</label>
+          <input id="loginUser" class="input" placeholder="请输入账号（如：admin）" />
+        </div>
+        <div class="field">
+          <label>密码</label>
+          <input id="loginPass" class="input" type="password" placeholder="请输入密码（如：123456）" />
+        </div>
+      </div>
+      <div class="notice" id="loginTip">提示：admin/123456 登录管理员；输入任意账号密码可进入普通用户。</div>
+      <div class="footer">
+        <button class="btn ghost" id="btnCancelLogin">取消</button>
+        <button class="btn" id="btnLogin">登录</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
